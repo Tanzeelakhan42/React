@@ -4,8 +4,9 @@ import viteLogo from "./assets/vite.svg";
 import heroImg from "./assets/hero.png";
 import "./App.css";
 
-function MyFirstComponent() {
-  return <h1>Hello from React</h1>;
+function MyComponent() {
+  const myName = "Tanzeela Firdous";
+  return <h1>Hello from, {myName}</h1>;
 }
 
 function App() {
@@ -13,7 +14,7 @@ function App() {
 
   return (
     <>
-      <MyFirstComponent />
+      <MyComponent />
       <section id="center">
         <div className="hero">
           <img src={heroImg} className="base" width="170" height="179" alt="" />
