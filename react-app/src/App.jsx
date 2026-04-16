@@ -7,6 +7,7 @@ import "./App.css";
 function MyFirstComponent() {
   return <h1>Hello from React</h1>;
 }
+
 function App() {
   const [count, setCount] = useState(0);
 
