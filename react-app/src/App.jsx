@@ -4,19 +4,23 @@ import viteLogo from "./assets/vite.svg";
 import heroImg from "./assets/hero.png";
 import "./App.css";
 
-function add(x, y) {
-  return x + y;
+function Card() {
+  return (
+    <div>
+      <img src="https://images.pexels.com/photos/9927973/pexels-photo-9927973.jpeg"></img>
+      <h3>This is a G Wagon</h3>
+      <p>
+        I love this colour and that too in green colour. I would buy it soon IA
+      </p>
+    </div>
+  );
 }
-function MyComponent() {
-  return <h1>Result= {add(5, 10)}</h1>;
-}
-
 function App() {
   const [count, setCount] = useState(0);
 
   return (
     <>
-      <MyComponent />
+      <Card />
       <section id="center">
         <div className="hero">
           <img src={heroImg} className="base" width="170" height="179" alt="" />
