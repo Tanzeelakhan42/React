@@ -4,9 +4,11 @@ import viteLogo from "./assets/vite.svg";
 import heroImg from "./assets/hero.png";
 import "./App.css";
 
+function add(x, y) {
+  return x + y;
+}
 function MyComponent() {
-  const myName = "Tanzeela Firdous";
-  return <h1>Hello from, {myName}</h1>;
+  return <h1>Result= {add(5, 10)}</h1>;
 }
 
 function App() {
