@@ -4,14 +4,12 @@ import viteLogo from "./assets/vite.svg";
 import heroImg from "./assets/hero.png";
 import "./App.css";
 
-function Card() {
+function Card({ imageURL, title, description }) {
   return (
     <div>
-      <img src="https://images.pexels.com/photos/9927973/pexels-photo-9927973.jpeg"></img>
-      <h3>This is a G Wagon</h3>
-      <p>
-        I love this colour and that too in green colour. I would buy it soon IA
-      </p>
+      <img src={imageURL} alt={title}></img>
+      <h3>{title}</h3>
+      <p>{description}</p>
     </div>
   );
 }
@@ -20,7 +18,15 @@ function App() {
 
   return (
     <>
-      <Card />
+      <Card
+        imageURL={
+          "https://images.pexels.com/photos/9927973/pexels-photo-9927973.jpeg"
+        }
+        title={"Green G Wagon"}
+        description={
+          "I love this colour and that too in green colour. I would buy it soon IA"
+        }
+      />
       <section id="center">
         <div className="hero">
           <img src={heroImg} className="base" width="170" height="179" alt="" />
