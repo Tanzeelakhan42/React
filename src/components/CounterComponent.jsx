@@ -6,6 +6,7 @@ const CounterComponent = () => {
     <div>
       <p>Counter - {count} </p>
       <button onClick={() => setCount(count + 1)}>Increment</button>
+      <button onClick={() => setCount(count - 1)}>Decrement</button>
     </div>
   );
 };
