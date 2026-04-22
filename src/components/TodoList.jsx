@@ -1,20 +1,20 @@
 import React from "react";
 import "../components/styles/todolist.styles.css";
 
-const TodoList = () => {
+const TodoList = ({ item1, item2, item3 }) => {
   return (
     <ul>
       <li>
         <input type="checkbox" />
-        <span>Eat</span>
+        <span>{item1}</span>
       </li>
       <li>
         <input type="checkbox" />
-        <span>Code</span>
+        <span>{item2}</span>
       </li>
       <li>
         <input type="checkbox" />
-        <span>Sleep</span>
+        <span>{item3}</span>
       </li>
     </ul>
   );
