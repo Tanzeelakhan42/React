@@ -13,15 +13,16 @@ const CounterComponent = () => {
       <button onClick={() => setCount((prev) => prev + 1)}>Increment</button>
       <button onClick={() => setCount((prev) => (prev > 0 ? prev - 1 : 0))}>
         Decrement
-      </button>
+      </button>{" "}
+      <button onClick={() => setValue("React")}>Change text</button>
       <button
         onClick={() => {
           setCount(initialValue);
+          setValue("Tanzeela");
         }}
       >
         Reset
       </button>
-      <button onClick={() => setValue("React")}>Change text</button>
       <button onClick={() => setShow(!show)}>{show ? "Hide" : "Show"}</button>
       {show && <p>I am visible</p>}
     </div>
