@@ -7,10 +7,9 @@ const App = () => {
   return (
     <div>
       <h1>Todo List:-</h1>
-      <TodoList item1="Eat" item2="Code" item3="Sleep" />
-      {/* <TodoList todoitem="Eat" />
-      <TodoList todoitem="Code" />
-      <TodoList todoitem="Sleep" /> */}
+      <TodoList text="Eat" />
+      <TodoList completed={true} text="Code" />
+      <TodoList text="Sleep" />
     </div>
   );
 };
